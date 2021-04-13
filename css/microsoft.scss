@@ -15,6 +15,7 @@ picture{
 a {
 	text-decoration: none;
 	border: none;
+	
 }
 li {
 	list-style: none;
@@ -25,10 +26,38 @@ li {
 	margin: auto;
 	
 }
-h1{
+h1 , h2 , p , h3{
 	margin: 0;
 }
 
+.link-animation-right{
+	transition: 0.5s;
+	position: relative;
+	right: 0px;
+	
+}
+.link-animation-left{
+	transition: 0.5s;
+	position: relative;
+	left: 0px;
+}
+
+a:hover{
+	// .link-animation-right{
+	// 	transition: 0.5s;
+	// 	position: relative;
+	// 	right: 5px;
+	// 	text-decoration: underline;
+		
+	// }
+	.link-animation-left{
+		transition: 0.5s;
+		position: relative;
+		left: 5px;
+		
+
+	}
+}
 
 
 .nav-frame{
@@ -36,6 +65,12 @@ h1{
 	height: 54px;
 	display: flex;
 	justify-content: space-between;
+	a{
+		color: black;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
 }
 .nav-left {
 	height: 100%;
@@ -96,10 +131,260 @@ h1{
 	background-position: center;
 	margin-right: 10px;
 }
-.bannerA {
-	width: 100%;
-	height: 600px;	
-	position: relative;
+main{
+	a{
+		color: #0067b8;
+	}
+	.bannerA {
+		width: 100%;
+		height: 600px;	
+		position: relative;
+			picture{
+				width: 100%;
+					img{
+						width: 100%;
+					}
+			}
+			#fake-bannerA{
+				position: absolute;
+				top: 0;
+				left: 0;
+				.left-img{
+					visibility: hidden;
+					background-image: url(../img/img_icon/左箭頭.png);
+					position: absolute;
+					top: 50%;
+					left: 0px;
+					transform: translate(0 , -50%);
+				}
+				.right-img{
+					visibility: hidden;
+					background-image: url(../img/img_icon/右箭頭.png);
+					position: absolute;
+					top: 50%;
+					right: 0px;
+					transform: translate(0 , -50%);
+				}
+				.arrow-style{
+					width: 42px;
+					height: 42px;
+					background-size: contain;
+					background-position: center;
+					border-radius: 50%;
+					box-shadow: 0px 0px 2px 2px inset rgba(0,0,0,.3) ;
+					
+				}
+				.container-percent {
+					width: 90%;;
+					height: 100%;
+					margin: auto;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					
+					.text-group{
+						height: 140px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: flex-start;
+						.text-title{
+							
+							font-weight: bolder;
+							font-size: 34px;
+							line-height: 40px;
+						}
+						.text-contain{
+							font-size: 15px;
+							line-height: 20px;
+							padding: 12px 0 0;
+							font-weight: 400;
+	
+						}
+						.shopping-frame{
+							width: 124px;
+							height: 40px;
+							
+							background-color: black;
+							color: white;
+							// margin-top: 24px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							.buy-rightnow{
+								font-size: 15px;
+								
+							}
+							.buy-right-arrow{
+								font-size: 15px;
+							}
+						}
+						.shopping-frame:hover{
+							.link-animation-right{
+								transition: 0.5s;
+								position: relative;
+								right: 5px;
+								text-decoration: underline;
+								
+							}
+						}
+						
+	
+						
+					
+					}
+				
+				}	
+			}
+			#fake-bannerA:hover{
+				.left-img{
+					visibility: visible;
+					background-image: url(../img/img_icon/左箭頭.png);
+					position: absolute;
+					top: 50%;
+					left: 0px;
+					transform: translate(0 , -50%);
+				}
+				.right-img{
+					visibility: visible;
+					background-image: url(../img/img_icon/右箭頭.png);
+					position: absolute;
+					top: 50%;
+					right: 0px;
+					transform: translate(0 , -50%);
+				}
+			}
+	}
+	.shopping-link-frame{
+		width: 100%;
+		height: 129px;
+		margin-top: 45px;
+		// background-color: yellow;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+			.choose365{
+				width: 184px;
+				height: 112px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				// background-color: red;
+				padding-top: 15px;
+					.img365{
+						width: 40px;
+						height: 40px;
+						background-image: url(../img/img_icon/365photo-icon.png);
+						margin-bottom: 8px;
+					}
+					.text365{
+						text-align: center;
+					}
+			}		
+			.choose365:hover{
+				.text365{
+					text-decoration: underline;
+				}
+			}	
+				
+			
+			.choose-surface{
+				width: 184px;
+				height: 92px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				// background-color: blueviolet;
+					.img-surface{
+						width: 40px;
+						height: 40px;
+						background-image: url(../img/img_icon/surface-photo.png);
+						margin-bottom: 8px;
+					}
+			}		
+			.choose-surface:hover{
+				.text-surface{
+					text-decoration: underline;
+				}
+					
+			}
+			.choose-windows10{
+				width: 184px;
+				height: 92px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				// background-color: cadetblue;
+					.img-windows10{
+						width: 40px;
+						height: 40px;
+						background-image: url(../img/img_icon/win10-photo.jpg);
+						margin-bottom : 8px;
+					}
+			}
+			.choose-windows10:hover{
+				.text-windows10{
+					text-decoration: underline;
+				}
+			
+			
+			}
+	}
+	.cardA{
+		width: 100%;
+		height: 382px;
+		margin-top: 48px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		.card{
+			width: 382px;
+			height: 100%;
+			.card-text-frame{
+				width: 100%;
+				margin-top: 37px;
+				.card-link-frame{
+					margin-top: 10px;
+					a{
+						margin-right: 16px;
+					}
+				}
+				.a-frame{
+					margin-right:3px; 
+					margin-top: 10px;
+				}
+				
+			}
+			.card-img1{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/laptop-go.jpg);
+				
+			}
+			.card-img2{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/365photo.jpg);	
+			}
+			.card-img3{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/xbox.jpg);
+			}
+			.card-img4{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/edge.jpg);
+			}
+		}
+	}
+	.bannerB{
+		width: 100%;
+		height: 600px;	
+		position: relative;
 		picture{
 			width: 100%;
 				img{
@@ -117,7 +402,6 @@ h1{
 				display: flex;
 				justify-content: flex-start;
 				align-items: center;
-				
 				.text-group{
 					height: 140px;
 					display: flex;
@@ -125,22 +409,19 @@ h1{
 					justify-content: space-between;
 					align-items: flex-start;
 					.text-title{
-						
 						font-weight: bolder;
 						font-size: 34px;
-    					line-height: 40px;
+						line-height: 40px;
 					}
 					.text-contain{
 						font-size: 15px;
-    					line-height: 20px;
-    					padding: 12px 0 0;
-    					font-weight: 400;
-
+						line-height: 20px;
+						padding: 12px 0 0;
+						font-weight: 400;
 					}
 					.shopping-frame{
 						width: 124px;
 						height: 40px;
-						
 						background-color: black;
 						color: white;
 						// margin-top: 24px;
@@ -148,48 +429,217 @@ h1{
 						justify-content: center;
 						align-items: center;
 						.buy-rightnow{
-							transition: 0.5s;
-							position: relative;
-							right: 0px;
+							font-size: 15px;
 						}
 						.buy-right-arrow{
+							font-size: 15px;
+						}
+					}
+					.shopping-frame:hover{
+						.link-animation-right{
 							transition: 0.5s;
 							position: relative;
-							left: 0px;
-						}
-					}
-					
-
-					.shopping-frame:hover {
-						.buy-rightnow{
-							font-size: 15px;
 							right: 5px;
-							text-decoration: underline;
-						}
-						.buy-right-arrow{ 
-							font-size: 15px;
-							left: 5px;
+							text-decoration: underline;	
 						}
 					}
-				
 				}
-			
 			}	
 		}
-}
-.shopping-link-frame{
-	width: 100%;
-	height: 129px;
-	margin-top: 45px;
-	background-color: yellow;
-		// .choose365{
-
-		// }
+	}
+	.cardB-title{
+		width: 100%;
+		height: 32px;
+		margin-top: 48px;
+		margin-bottom: 20px;
+		h2{
+			font-size: 24px;
+			line-height: 28px;
+			padding: 36px 0 4px;
+			font-weight: 600;
+			padding-top: 0;
+		}
+	}
+	.cardB{
+		width: 100%;
+		height: 397.5px;
 		
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		
+		.card{
+			width: 382px;
+			height: 100%;
+			.card-text-frame{
+				width: 100%;
+				margin-top: 37px;
+				.card-link-frame{
+					margin-top: 10px;
+					a{
+						margin-right: 16px;
+					}
+				}
+				.a-frame{
+					margin-right:3px; 
+					margin-top: 10px;
+				}
+				
+			}
+			.card-img1{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/laptop4.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.card-img2{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/microsoft-team.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;	
+			}
+			.card-img3{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/microsoft365-business.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.card-img4{
+				width: 382px;
+				height: 214px;
+				background-image: url(../img/img_icon/four-people.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+	.social-media-link{
+		width: 100%;
+		height: 32px;
+		margin-top: 48px;
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		span{
+			margin-right: 12px; 
+			font-size: 15px;
+			line-height: 32px;
+			color: rgba(0,0,0,.6);
+			display: flex;
+			align-content: center;
+		}
+		
+		a:hover{
+			.mask{
+				transition: 0.5s;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.2);
+			}
+		}
+		
+		.fb-link{
+			width: 32px;
+			height: 32px;
+			background-image: url(../img/img_icon/fb_microsoft.png);
+			margin-right: 12px; ;
+			.mask{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0);
+			}
+		}
+		.yt-link{
+			width: 32px;
+			height: 32px;
+			background-image: url(../img/img_icon/youtube-microsoft.png);
+			margin-right: 12px; ;
+			
+			.mask{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0);
+			}
+		}
+	}
 }
-.footer-frame {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+
+footer{
+	a:hover{
+		text-decoration: underline;
+	}
+	background: #f2f2f2;
+	margin-top: 48px;
+	.footer-frame {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		.footer-style{
+			width: 16.66%;
+			ul{
+				margin: 0px;
+				padding: 0px;
+				.footer-text-title{
+					margin: 36px 0px 4px;
+					font-size: 15px;
+					line-height: 20px;
+					font-weight: 600;
+				}
+				li{
+					color: #616161;
+					padding: 8px 0;
+				}
+			}
+		}
+		
+	}
+	.footer-base{
+		width: 100%;
+		height: 72px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.language{
+			width: 109.25px;
+			height: 24px;
+			display: flex;
+			justify-content: flex-start;
+			align-content: center;
+			.earth-size{
+				
+				margin-right: 10px;	
+				display: flex;
+				align-items: center;
+				font-size: 20px;
+				line-height: 24px;
+			}
+			span{
+				display: flex;
+				align-items: center;
+			}
+		}
+		.language:hover{
+			span{
+				text-decoration: underline;
+			}
+		}
+		ul{
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			li{
+				margin: 0px 24px 4px 0px;
+				
+			}
+		}
+	}
 }
+
