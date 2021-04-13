@@ -7,162 +7,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Document</title>
-    <style>
-        
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-size: 12px;
-            font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-            border: none;
-        }
-        
-        li{
-            list-style: none;
-        }
-
-        /* navBar */
-        .container {
-            max-width: calc(1600px + 10%);
-            height: 54px;
-            padding: 0 5%;
-            /* background-color: aquamarine; */
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .nav-left {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-        .nav-right {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-left .style {
-            margin: 0 8px;
-        }
-
-        .nav-left .logo {
-            width: 108px;
-            height: 23px;
-            background-image: url(./img/microsoft-icon.png);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-left:13px;
-        }
-
-        .nav-right {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        
-
-        .down-arrow{
-            width: 16px;
-            height: 16px;
-            background-image: url(./img/img_icon/下箭頭.jpg);
-            background-size: contain;
-            background-position: center;
-            margin-top: 5px;
-            margin-right: 25px;
-        }
-
-        .search-icon{
-            width: 16px;            
-            height: 16px;
-            background-image: url(./img/img_icon/搜尋.jpg);
-            background-size: contain;
-            background-position: center;
-            margin-right: 40px;
-        }
-
-        .cart-icon{
-            width: 16px;            
-            height: 16px;
-            background-image: url(./img/img_icon/購屋車.jpg);
-            background-size: contain;
-            background-position: center;
-            margin-right: 10px;
-
-        }
-        .login-icon{
-            width: 32px;            
-            height: 32px;
-            background-image: url(./img/img_icon/帳號.jpg);
-            background-size: contain;
-            background-position: center;
-            margin-right: 10px;
-
-        }
-
-        /* banner */
-        
-        /* footer */
-        .footer-frame{
-            width: 100%;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="./css/microsoft.css">
 </head>
 
 <body>
     <nav>
         <div class="container">
-            <div class="nav-left">
-                <a href="" class="style logo"></a>
-                <a href="" class="style microsoft365">Microsoft 365</a>
-                <a href="" class="style office">Office</a>
-                <a href="" class="style windows">Windows</a>
-                <a href="" class="style surface">Surface</a>
-                <a href="" class="style xbox">Xbox</a>
-                <a href="" class="style support">支援</a>
-                
+            <div class="nav-frame">
+                <div class="nav-left">
+                    <a href="" class="style logo"></a>
+                    <a href="" class="style microsoft365">Microsoft 365</a>
+                    <a href="" class="style office">Office</a>
+                    <a href="" class="style windows">Windows</a>
+                    <a href="" class="style surface">Surface</a>
+                    <a href="" class="style xbox">Xbox</a>
+                    <a href="" class="style support">支援</a>
+    
+                </div>
+                <div class="nav-right">
+                    <div class="all-microsoft">所有 Microsoft</div>
+                    <div class="down-arrow"></div>
+                    <div class="search">搜尋</div>
+                    <div class="search-icon"></div>
+                    <div class="shopping-cart">購物車</div>
+                    <div class="cart-icon"></div>
+                    <div class="account">登入</div>
+                    <div class="login-icon"></div>
+                </div>
             </div>
-            <div class="nav-right">
-                <div class="all-microsoft">所有 Microsoft</div>
-                <div class="down-arrow"></div>
-                <div class="search">搜尋</div>
-                <div class="search-icon"></div>
-                <div class="shopping-cart">購物車</div>
-                <div class="cart-icon"></div>
-                <div class="account">登入</div>
-                <div class="login-icon"></div>
-            </div>
+            
         </div>
     </nav>
     <main>
-        <div class="bannerA">
-            <div class="text-title"></div>
-            <div class="text-contant"></div>
-            <div class="shopping-frame">
-                <div class="buy-rightnow"></div>
-                <div class="buy-right-arrow"></div>
+        <div class="container">
+            <div class="bannerA">
+                <picture>
+                    <source
+                        data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=303&amp;w=539&amp;b=%23FFFFFFFF&amp;l=f&amp;x=985&amp;y=249&amp;s=1135&amp;d=638&amp;aim=true"
+                        media="(max-width:539px)"
+                        srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=303&amp;w=539&amp;b=%23FFFFFFFF&amp;l=f&amp;x=985&amp;y=249&amp;s=1135&amp;d=638&amp;aim=true">
+                    <source
+                        data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=431&amp;w=767&amp;b=%23FFFFFFFF&amp;l=f&amp;x=972&amp;y=238&amp;s=1148&amp;d=645&amp;aim=true"
+                        media="(min-width:540px) and (max-width:767px)"
+                        srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=431&amp;w=767&amp;b=%23FFFFFFFF&amp;l=f&amp;x=972&amp;y=238&amp;s=1148&amp;d=645&amp;aim=true">
+                    <source
+                        data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=609&amp;w=1083&amp;b=%23FFFFFFFF&amp;l=f&amp;x=260&amp;y=66&amp;s=1860&amp;d=1046&amp;aim=true"
+                        media="(min-width:768px) and (max-width:1083px)"
+                        srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=609&amp;w=1083&amp;b=%23FFFFFFFF&amp;l=f&amp;x=260&amp;y=66&amp;s=1860&amp;d=1046&amp;aim=true">
+                    <source
+                        data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=472&amp;w=1259&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=183&amp;s=2120&amp;d=795&amp;aim=true"
+                        media="(min-width:1084px) and (max-width:1399px)"
+                        srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=472&amp;w=1259&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=183&amp;s=2120&amp;d=795&amp;aim=true">
+                    <source
+                        data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=600&amp;w=1600&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=176&amp;s=2120&amp;d=795&amp;aim=true"
+                        media="(min-width:1400px) and (max-width:1778px)"
+                        srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=600&amp;w=1600&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=176&amp;s=2120&amp;d=795&amp;aim=true">
+                    <source
+                        data-srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=600&amp;w=1600&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=176&amp;s=2120&amp;d=795&amp;aim=true"
+                        srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=600&amp;w=1600&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=176&amp;s=2120&amp;d=795&amp;aim=true">
+                    <img class="slider lazypreload lazyloaded" alt="全新的 Surface Laptop 3 背靠背"
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=600&amp;w=1600&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=176&amp;s=2120&amp;d=795&amp;aim=true"
+                        data-src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3NYMo?ver=d72d&amp;q=0&amp;m=8&amp;h=600&amp;w=1600&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=176&amp;s=2120&amp;d=795&amp;aim=true">
+                </picture>
+                <div id="fake-bannerA" class="bannerA ">
+                    <div class="container-percent">
+                        <div class="text-group">
+                            <div class="text-title">
+                                <span>Surface Pro7</span>
+                            </div>
+                            <div class="text-contant">
+                                纖變萬化
+                            </div>
+                            <div class="shopping-frame">
+                                <div class="buy-rightnow">立即選購</div>
+                                <div class="buy-right-arrow">></div>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
             </div>
+            <div class="shopping-link">
+                <div class="shopping-link-frame">
+                    <div class="choose365">
+                        <div class="img365"></div>
+                        <div class="text365">
+                            <span>選擇您的<br>Microsoft 365</span>
+                        </div>
+                    </div>
+                    <div class="choose-surface">
+                        <div class="img-surface"></div>
+                        <div class="text-surface">
+                            <span>選購 Surface 裝置</span>
+                        </div>
+                    </div>
+                    <div class="choose-windows10">
+                        <div class="img-windows10"></div>
+                        <div class="text-windows10">
+                            <span>選購 windows10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardA"></div>
+            <div class="bannerB"></div>
+            <div class="cardB"></div>
+            <div class="social-media-link"></div>
         </div>
-        <div class="shopping-link"></div>
-        <div class="cardA"></div>
-        <div class="bannerB"></div>
-        <div class="cardB"></div>
-        <div class="social-media-link"></div>
+
     </main>
     <!-- <footer>
         <div class="container">

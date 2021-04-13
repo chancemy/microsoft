@@ -1,0 +1,190 @@
+/* navBar */
+/* banner */
+/* footer */
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: 12px;
+	font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+picture{
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	border: none;
+}
+li {
+	list-style: none;
+}
+.container {
+	width: 1600px;
+	height: 100%;
+	margin: auto;
+	
+}
+h1{
+	margin: 0;
+}
+
+
+
+.nav-frame{
+	width: 100%;
+	height: 54px;
+	display: flex;
+	justify-content: space-between;
+}
+.nav-left {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	.style {
+		margin: 0 8px;
+	}
+	.logo {
+		width: 108px;
+		height: 100%;
+		background-image: url(../img/img_icon/microsoft.jpg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-left: 13px;
+	}
+}
+.nav-right {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.down-arrow {
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/img_icon/下箭頭.jpg);
+	background-size: contain;
+	background-position: center;
+	margin-top: 5px;
+	margin-right: 25px;
+}
+.search-icon {
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/img_icon/搜尋.jpg);
+	background-size: contain;
+	background-position: center;
+	margin-right: 40px;
+}
+.cart-icon {
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/img_icon/購屋車.jpg);
+	background-size: contain;
+	background-position: center;
+	margin-right: 10px;
+}
+.login-icon {
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/img_icon/帳號.jpg);
+	background-size: contain;
+	background-position: center;
+	margin-right: 10px;
+}
+.bannerA {
+	width: 100%;
+	height: 600px;	
+	position: relative;
+		picture{
+			width: 100%;
+				img{
+					width: 100%;
+				}
+		}
+		#fake-bannerA{
+			position: absolute;
+			top: 0;
+			left: 0;
+			.container-percent {
+				width: 90%;;
+				height: 100%;
+				margin: auto;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				
+				.text-group{
+					height: 140px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: flex-start;
+					.text-title{
+						
+						font-weight: bolder;
+						font-size: 34px;
+    					line-height: 40px;
+					}
+					.text-contain{
+						font-size: 15px;
+    					line-height: 20px;
+    					padding: 12px 0 0;
+    					font-weight: 400;
+
+					}
+					.shopping-frame{
+						width: 124px;
+						height: 40px;
+						
+						background-color: black;
+						color: white;
+						// margin-top: 24px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.buy-rightnow{
+							transition: 0.5s;
+							position: relative;
+							right: 0px;
+						}
+						.buy-right-arrow{
+							transition: 0.5s;
+							position: relative;
+							left: 0px;
+						}
+					}
+					
+
+					.shopping-frame:hover {
+						.buy-rightnow{
+							font-size: 15px;
+							right: 5px;
+							text-decoration: underline;
+						}
+						.buy-right-arrow{ 
+							font-size: 15px;
+							left: 5px;
+						}
+					}
+				
+				}
+			
+			}	
+		}
+}
+.shopping-link{
+	width: 100%;
+	height: 129px;
+		
+}
+.footer-frame {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
