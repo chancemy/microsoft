@@ -29,6 +29,9 @@ li {
 h1 , h2 , p , h3{
 	margin: 0;
 }
+input{
+	display: none;
+}
 
 .link-animation-right{
 	transition: 0.5s;
@@ -58,79 +61,151 @@ a:hover{
 
 	}
 }
+nav{
+	.container{
+		.nav-frame{
+			width: 100%;
+			height: 54px;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			a{
+				color: black;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			.nav-left {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				.style {
+					margin: 0 8px;
+				}
+				.logo {
+					width: 108px;
+					height: 100%;
+					background-image: url(../img/img_icon/microsoft.jpg);
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+					margin-left: 13px;
+				}
+			}
+			.nav-right {
+				height: 100%;
+				
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				.all-microsoft-frame{
+					display: flex;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					position: relative;
+					.down-arrow {
+						width: 16px;
+						height: 16px;
+						background-image: url(../img/img_icon/下箭頭.jpg);
+						background-size: contain;
+						background-position: center;
+						margin-top: 5px;
+						margin-right: 25px;
+						text-decoration: none;	
+					}
+				}
+				.drop-down-menu{
+					display: none;
+					width: 1230px;
+					height: 395px;
+					position: absolute;
+					top: 54px;
+					right: 50px;
+					background-color: white;
+					z-index: 1;
+					
+					.footer-frame {
+						width: 100%;
+						display: flex;
+						justify-content: flex-start;
+						align-items: flex-start;
+						.footer-style{
+							width: 16.66%;
+							ul{
+								margin: 0px;
+								padding: 0px;
+								.footer-text-title{
+									margin: 18px 0px 18px 24px;
+									font-size: 15px;
+									line-height: 20px;
+									font-weight: 600;
+								}
+								li{
+									color: #616161;
+									margin: 12px 0px 12px 24px;
+								}
+							}
+						}
+						
+					}
+					.website-map{
+						width: 100%;
+						height: 36px;
+						display: flex;
+						justify-content: center;
+						align-content: flex-end;
+						border-bottom: black 3px solid;
+						.map-link{
+							width: 270px;
+							height: 36px;
+							display: flex;
+							justify-content: center;
+							align-content: center;
+						}
+					}
+				}
+				#drop-down-menu:checked + .drop-down-menu{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+				}
+				.all-microsoft-frame:hover{
+					text-decoration: underline;
+				}
+				.search-icon {
+					width: 16px;
+					height: 16px;
+					background-image: url(../img/img_icon/搜尋.jpg);
+					background-size: contain;
+					background-position: center;
+					margin-right: 40px;
+				}
+				.cart-icon {
+					width: 16px;
+					height: 16px;
+					background-image: url(../img/img_icon/購屋車.jpg);
+					background-size: contain;
+					background-position: center;
+					margin-right: 10px;
+				}
+				.login-icon {
+					width: 32px;
+					height: 32px;
+					background-image: url(../img/img_icon/帳號.jpg);
+					background-size: contain;
+					background-position: center;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
 
 
-.nav-frame{
-	width: 100%;
-	height: 54px;
-	display: flex;
-	justify-content: space-between;
-	a{
-		color: black;
-	}
-	a:hover{
-		text-decoration: underline;
-	}
-}
-.nav-left {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	.style {
-		margin: 0 8px;
-	}
-	.logo {
-		width: 108px;
-		height: 100%;
-		background-image: url(../img/img_icon/microsoft.jpg);
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-		margin-left: 13px;
-	}
-}
-.nav-right {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-}
-.down-arrow {
-	width: 16px;
-	height: 16px;
-	background-image: url(../img/img_icon/下箭頭.jpg);
-	background-size: contain;
-	background-position: center;
-	margin-top: 5px;
-	margin-right: 25px;
-}
-.search-icon {
-	width: 16px;
-	height: 16px;
-	background-image: url(../img/img_icon/搜尋.jpg);
-	background-size: contain;
-	background-position: center;
-	margin-right: 40px;
-}
-.cart-icon {
-	width: 16px;
-	height: 16px;
-	background-image: url(../img/img_icon/購屋車.jpg);
-	background-size: contain;
-	background-position: center;
-	margin-right: 10px;
-}
-.login-icon {
-	width: 32px;
-	height: 32px;
-	background-image: url(../img/img_icon/帳號.jpg);
-	background-size: contain;
-	background-position: center;
-	margin-right: 10px;
-}
+
 main{
 	a{
 		color: #0067b8;
