@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-size: 12px;
+            font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            border: none;
+        }
+        
+        li{
+            list-style: none;
+        }
+
+        /* navBar */
+        .container {
+            max-width: calc(1600px + 10%);
+            height: 54px;
+            padding: 0 5%;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-left {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .nav-right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left .style {
+            margin: 0 8px;
+        }
+
+        .nav-left .logo {
+            width: 108px;
+            height: 23px;
+            background-image: url(./img/microsoft-icon.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left:13px;
+        }
+
+        .nav-right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        
+
+        .down-arrow{
+            width: 16px;
+            height: 16px;
+            background-image: url(./img/img_icon/下箭頭.jpg);
+            background-size: contain;
+            background-position: center;
+            margin-top: 5px;
+            margin-right: 25px;
+        }
+
+        .search-icon{
+            width: 16px;            
+            height: 16px;
+            background-image: url(./img/img_icon/搜尋.jpg);
+            background-size: contain;
+            background-position: center;
+            margin-right: 40px;
+        }
+
+        .cart-icon{
+            width: 16px;            
+            height: 16px;
+            background-image: url(./img/img_icon/購屋車.jpg);
+            background-size: contain;
+            background-position: center;
+            margin-right: 10px;
+
+        }
+        .login-icon{
+            width: 32px;            
+            height: 32px;
+            background-image: url(./img/img_icon/帳號.jpg);
+            background-size: contain;
+            background-position: center;
+            margin-right: 10px;
+
+        }
+
+        /* banner */
+        
+        /* footer */
+        .footer-frame{
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-left">
+                <a href="" class="style logo"></a>
+                <a href="" class="style microsoft365">Microsoft 365</a>
+                <a href="" class="style office">Office</a>
+                <a href="" class="style windows">Windows</a>
+                <a href="" class="style surface">Surface</a>
+                <a href="" class="style xbox">Xbox</a>
+                <a href="" class="style support">支援</a>
+                
+            </div>
+            <div class="nav-right">
+                <div class="all-microsoft">所有 Microsoft</div>
+                <div class="down-arrow"></div>
+                <div class="search">搜尋</div>
+                <div class="search-icon"></div>
+                <div class="shopping-cart">購物車</div>
+                <div class="cart-icon"></div>
+                <div class="account">登入</div>
+                <div class="login-icon"></div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="bannerA">
+            <div class="text-title"></div>
+            <div class="text-contant"></div>
+            <div class="shopping-frame">
+                <div class="buy-rightnow"></div>
+                <div class="buy-right-arrow"></div>
+            </div>
+        </div>
+        <div class="shopping-link"></div>
+        <div class="cardA"></div>
+        <div class="bannerB"></div>
+        <div class="cardB"></div>
+        <div class="social-media-link"></div>
+    </main>
+    <!-- <footer>
+        <div class="container">
+            <div class="footer-frame">
+                <div class="footer-style">
+                    <ul>
+                        
+                        <li>最新動向</li>
+                        <li>Microsoft 365</li>
+                        <li>Surface Go</li>
+                        <li>Surface Book 2</li>
+                        <li>Surface Pro</li>
+                        <li>Windows 10 應用程式</li>
+                    </ul>
+                </div>
+                <div class="footer-style">
+                    <ul>
+                        <li>Microsoft Store</li>
+                        <li>帳戶設定檔</li>
+                        <li>下載中心</li>
+                        <li>Microsoft Store 支援</li>
+                        <li>退貨/退款</li>
+                        <li>訂單追蹤</li>
+                    </ul>
+                </div>
+                <div class="footer-style">
+                    <ul>                    
+                        <li>教育</li>
+                        <li>Microsoft 在教育領域的應用</li>
+                        <li>學生適用的 Office</li>
+                        <li>學校適用的 Office 365</li>
+                        <li>Microsoft Azure 在教育領域的應用</li>
+                    </ul>
+                </div>
+                <div class="footer-style">
+                    <ul>
+                        <li>企業</li>
+                        <li>Azure</li>
+                        <li>AppSource</li>
+                        <li>汽車</li>
+                        <li>政府機構</li>
+                        <li>醫療保健</li>
+                        <li>製造</li>
+                        <li>金融服務</li>
+                        <li>零售</li>
+                    </ul>
+                </div>
+                <div class="footer-style">
+                    <ul>
+                        <li>開發人員</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>Windows 開發人員中心</li>
+                        <li>開發人員中心</li>
+                        <li>Microsoft 開發人員計畫</li>
+                        <li>Channel 9</li>
+                    </ul>
+                </div>
+                <div class="footer-style">
+                    <ul>
+                        <li>公司</li>
+                        <li>人才招募</li>
+                        <li>公司新聞</li>
+                        <li>Microsoft 隱私權</li>
+                        <li>投資者</li>
+                        <li>安全性</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer> -->
+</body>
+
+</html>
