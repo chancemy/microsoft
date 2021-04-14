@@ -119,7 +119,7 @@ nav .container .nav-frame .nav-right {
           justify-content: flex-end;
 }
 
-nav .container .nav-frame .nav-right a:hover {
+nav .container .nav-frame .nav-right li a:hover {
   text-decoration: underline;
 }
 
@@ -231,8 +231,8 @@ nav .container .nav-frame .nav-right .drop-down-menu .website-map .map-link .buy
   margin-right: 5px;
 }
 
-nav .container .nav-frame .nav-right .drop-down-menu .website-map a:hover #weight {
-  text-decoration: none;
+nav .container .nav-frame .nav-right .drop-down-menu .website-map a:hover span {
+  text-decoration: underline;
 }
 
 nav .container .nav-frame .nav-right #drop-down-menu:checked + .drop-down-menu {
@@ -252,6 +252,10 @@ nav .container .nav-frame .nav-right #drop-down-menu:checked + .drop-down-menu {
 }
 
 nav .container .nav-frame .nav-right .all-microsoft-frame:hover {
+  text-decoration: underline;
+}
+
+nav .container .nav-frame .nav-right a:hover.underline {
   text-decoration: underline;
 }
 
@@ -288,7 +292,8 @@ main a {
 
 main .bannerA {
   width: 100%;
-  height: 100%;
+  height: 0px;
+  padding-bottom: 37.5%;
   position: relative;
 }
 
@@ -302,7 +307,8 @@ main .bannerA picture img {
 
 main .bannerA #fake-bannerA {
   width: 100%;
-  height: 100%;
+  height: 0px;
+  padding-bottom: 37.5%;
   position: absolute;
   top: 0;
   left: 0;
@@ -340,21 +346,19 @@ main .bannerA #fake-bannerA .arrow-style {
 
 main .bannerA #fake-bannerA .container-percent {
   width: 90%;
-  height: 100%;
+  height: 0px;
+  padding-bottom: 37.5%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
 
 main .bannerA #fake-bannerA .container-percent .text-group {
   height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,6 +560,10 @@ main .cardA {
           align-items: flex-start;
 }
 
+main .cardA a:hover span {
+  text-decoration: underline;
+}
+
 main .cardA .card {
   width: 23.875%;
   max-width: 383px;
@@ -581,8 +589,8 @@ main .cardA .card .card-text-frame .a-frame {
 
 main .cardA .card .card-img1 {
   width: 100%;
-  max-height: 214px;
-  height: auto;
+  height: 0;
+  padding-bottom: 55.87%;
   background-image: url(../img/img_icon/laptop-go.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -591,7 +599,8 @@ main .cardA .card .card-img1 {
 
 main .cardA .card .card-img2 {
   width: 100%;
-  height: 214px;
+  height: 0;
+  padding-bottom: 55.87%;
   background-image: url(../img/img_icon/365photo.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -600,7 +609,8 @@ main .cardA .card .card-img2 {
 
 main .cardA .card .card-img3 {
   width: 100%;
-  height: 214px;
+  height: 0;
+  padding-bottom: 55.87%;
   background-image: url(../img/img_icon/xbox.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -609,7 +619,8 @@ main .cardA .card .card-img3 {
 
 main .cardA .card .card-img4 {
   width: 100%;
-  height: 214px;
+  height: 0;
+  padding-bottom: 55.87%;
   background-image: url(../img/img_icon/edge.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -618,7 +629,8 @@ main .cardA .card .card-img4 {
 
 main .bannerB {
   width: 100%;
-  height: 600px;
+  height: 0px;
+  padding-bottom: 37.5%;
   padding-top: 48px;
   position: relative;
 }
@@ -632,6 +644,10 @@ main .bannerB picture img {
 }
 
 main .bannerB #fake-bannerA {
+  padding-top: 48px;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 37.5%;
   position: absolute;
   top: 0;
   left: 0;
@@ -639,7 +655,9 @@ main .bannerB #fake-bannerA {
 
 main .bannerB #fake-bannerA .container-percent {
   width: 90%;
-  height: 100%;
+  height: 0px;
+  padding-bottom: 37.5%;
+  position: relative;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,6 +672,11 @@ main .bannerB #fake-bannerA .container-percent {
 
 main .bannerB #fake-bannerA .container-percent .text-group {
   height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,8 +766,12 @@ main .cardB {
           align-items: flex-start;
 }
 
+main .cardB a:hover span {
+  text-decoration: underline;
+}
+
 main .cardB .card {
-  width: 382px;
+  width: 23.875%;
   height: 100%;
 }
 
@@ -767,8 +794,9 @@ main .cardB .card .card-text-frame .a-frame {
 }
 
 main .cardB .card .card-img1 {
-  width: 382px;
-  height: 214px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 55.92%;
   background-image: url(../img/img_icon/laptop4.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -776,8 +804,9 @@ main .cardB .card .card-img1 {
 }
 
 main .cardB .card .card-img2 {
-  width: 382px;
-  height: 214px;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 55.92%;
   background-image: url(../img/img_icon/microsoft-team.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -785,8 +814,9 @@ main .cardB .card .card-img2 {
 }
 
 main .cardB .card .card-img3 {
-  width: 382px;
-  height: 214px;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 55.92%;
   background-image: url(../img/img_icon/microsoft365-business.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -794,8 +824,9 @@ main .cardB .card .card-img3 {
 }
 
 main .cardB .card .card-img4 {
-  width: 382px;
-  height: 214px;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 55.92%;
   background-image: url(../img/img_icon/four-people.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -974,6 +1005,10 @@ footer .footer-base ul {
 
 footer .footer-base ul li {
   margin: 0px 24px 4px 0px;
+}
+
+footer .footer-base ul li a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1600px) {
