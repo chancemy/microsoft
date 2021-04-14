@@ -27,7 +27,8 @@ li {
 }
 
 .container {
-  width: 1600px;
+  max-width: calc(1600px + 10%);
+  padding: 0px 5%;
   height: 100%;
   margin: auto;
 }
@@ -77,10 +78,6 @@ nav .container .nav-frame a {
   color: black;
 }
 
-nav .container .nav-frame a:hover {
-  text-decoration: underline;
-}
-
 nav .container .nav-frame .nav-left {
   height: 100%;
   display: -webkit-box;
@@ -89,6 +86,10 @@ nav .container .nav-frame .nav-left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav .container .nav-frame .nav-left a:hover {
+  text-decoration: underline;
 }
 
 nav .container .nav-frame .nav-left .style {
@@ -116,6 +117,10 @@ nav .container .nav-frame .nav-right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+nav .container .nav-frame .nav-right a:hover {
+  text-decoration: underline;
 }
 
 nav .container .nav-frame .nav-right .all-microsoft-frame {
@@ -151,7 +156,7 @@ nav .container .nav-frame .nav-right .drop-down-menu {
   position: absolute;
   top: 54px;
   right: 50px;
-  background-color: white;
+  background-color: #f2f2f2;
   z-index: 1;
 }
 
@@ -192,6 +197,7 @@ nav .container .nav-frame .nav-right .drop-down-menu .footer-frame .footer-style
 nav .container .nav-frame .nav-right .drop-down-menu .website-map {
   width: 100%;
   height: 36px;
+  background-color: #e6e6e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,6 +220,19 @@ nav .container .nav-frame .nav-right .drop-down-menu .website-map .map-link {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .nav-frame .nav-right .drop-down-menu .website-map .map-link .buy-rightnow {
+  margin-right: 5px;
+}
+
+nav .container .nav-frame .nav-right .drop-down-menu .website-map a:hover #weight {
+  text-decoration: none;
 }
 
 nav .container .nav-frame .nav-right #drop-down-menu:checked + .drop-down-menu {
@@ -269,7 +288,7 @@ main a {
 
 main .bannerA {
   width: 100%;
-  height: 600px;
+  height: 100%;
   position: relative;
 }
 
@@ -282,6 +301,8 @@ main .bannerA picture img {
 }
 
 main .bannerA #fake-bannerA {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -523,7 +544,6 @@ main .shopping-link-frame .choose-windows10:hover .text-windows10 {
 
 main .cardA {
   width: 100%;
-  height: 382px;
   margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,8 +557,8 @@ main .cardA {
 }
 
 main .cardA .card {
-  width: 382px;
-  height: 100%;
+  width: 23.875%;
+  max-width: 383px;
 }
 
 main .cardA .card .card-text-frame {
@@ -560,32 +580,46 @@ main .cardA .card .card-text-frame .a-frame {
 }
 
 main .cardA .card .card-img1 {
-  width: 382px;
-  height: 214px;
+  width: 100%;
+  max-height: 214px;
+  height: auto;
   background-image: url(../img/img_icon/laptop-go.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 main .cardA .card .card-img2 {
-  width: 382px;
+  width: 100%;
   height: 214px;
   background-image: url(../img/img_icon/365photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 main .cardA .card .card-img3 {
-  width: 382px;
+  width: 100%;
   height: 214px;
   background-image: url(../img/img_icon/xbox.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 main .cardA .card .card-img4 {
-  width: 382px;
+  width: 100%;
   height: 214px;
   background-image: url(../img/img_icon/edge.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 main .bannerB {
   width: 100%;
   height: 600px;
+  padding-top: 48px;
   position: relative;
 }
 
@@ -833,10 +867,6 @@ footer {
   margin-top: 48px;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
 footer .footer-frame {
   width: 100%;
   display: -webkit-box;
@@ -848,6 +878,10 @@ footer .footer-frame {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+footer .footer-frame a:hover {
+  text-decoration: underline;
 }
 
 footer .footer-frame .footer-style {
@@ -919,6 +953,10 @@ footer .footer-base .language span {
           align-items: center;
 }
 
+footer .footer-base .language:hover .earth-size {
+  text-decoration: unset;
+}
+
 footer .footer-base .language:hover span {
   text-decoration: underline;
 }
@@ -936,5 +974,162 @@ footer .footer-base ul {
 
 footer .footer-base ul li {
   margin: 0px 24px 4px 0px;
+}
+
+@media (max-width: 1600px) {
+  .nav-right {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav-right .all-microsoft-frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative;
+  }
+  .nav-right .all-microsoft-frame .down-arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/img_icon/下箭頭.jpg);
+    background-size: contain;
+    background-position: center;
+    margin-top: 5px;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+  .nav-right .drop-down-menu {
+    display: none;
+    width: 1230px;
+    height: 395px;
+    position: absolute;
+    top: 54px;
+    right: 50px;
+    background-color: #f2f2f2;
+    z-index: 1;
+  }
+  .nav-right .drop-down-menu .footer-frame {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .nav-right .drop-down-menu .footer-frame .footer-style {
+    width: 16.66%;
+  }
+  .nav-right .drop-down-menu .footer-frame .footer-style ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .nav-right .drop-down-menu .footer-frame .footer-style ul .footer-text-title {
+    margin: 18px 0px 18px 24px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .nav-right .drop-down-menu .footer-frame .footer-style ul li {
+    color: #616161;
+    margin: 12px 0px 12px 24px;
+  }
+  .nav-right .drop-down-menu .website-map {
+    width: 100%;
+    height: 36px;
+    background-color: #e6e6e6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    border-bottom: black 3px solid;
+  }
+  .nav-right .drop-down-menu .website-map .map-link {
+    width: 270px;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-right .drop-down-menu .website-map .map-link .buy-rightnow {
+    margin-right: 5px;
+  }
+  .nav-right .drop-down-menu .website-map a:hover .buy-right-arrow.weight {
+    text-decoration: none;
+  }
+  .nav-right #drop-down-menu:checked + .drop-down-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-right .all-microsoft-frame:hover {
+    text-decoration: underline;
+  }
+  .nav-right .search-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/img_icon/搜尋.jpg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 40px;
+  }
+  .nav-right .cart-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/img_icon/購屋車.jpg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 10px;
+  }
+  .nav-right .login-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/img_icon/帳號.jpg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=microsoft.css.map */
