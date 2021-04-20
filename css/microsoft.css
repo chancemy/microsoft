@@ -1057,7 +1057,25 @@ footer .footer-base ul li a:hover {
   }
 }
 
+@media (max-width: 1440px) {
+  nav .container .nav-frame .nav-right .drop-down-menu {
+    width: 100%;
+    height: 395px;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
 @media (max-width: 1080px) {
+  main .container {
+    max-width: 1080px;
+    padding: 0px;
+    height: 100%;
+    margin: auto;
+  }
   main .cardA {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1129,9 +1147,15 @@ footer .footer-base ul li a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  nav .container .nav-frame .nav-right .drop-down-menu .footer-frame .footer-style {
+    width: 20%;
+  }
   nav .container .nav-frame .nav-right .drop-down-menu {
     width: 100%;
     height: unset;
+    position: absolute;
+    top: 54px;
+    right: 0;
   }
 }
 /*# sourceMappingURL=microsoft.css.map */
