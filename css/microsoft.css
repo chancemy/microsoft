@@ -1012,44 +1012,126 @@ footer .footer-base ul li a:hover {
 }
 
 @media (max-width: 1366px) {
-  .container {
+  nav .container {
     max-width: calc(1366px + 10%);
     padding: 0px 5%;
     height: 100%;
     margin: auto;
   }
-  .nav-right .search {
+  nav .container .nav-frame .nav-right .search {
     display: none;
   }
-  .nav-right .shopping-cart {
+  nav .container .nav-frame .nav-right .shopping-cart {
     display: none;
   }
-  .nav-right .account {
+  nav .container .nav-frame .nav-right .account {
     display: none;
   }
-  .nav-right .search-icon {
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/img_icon/搜尋.jpg);
-    background-size: contain;
-    background-position: center;
+  nav .container .nav-frame .nav-right .search-icon {
+    margin-right: 15px;
+  }
+  nav .container .nav-frame .nav-right .cart-icon {
+    margin-right: 15px;
+  }
+  nav .container .nav-frame .nav-right .login-icon {
     margin-right: 0px;
   }
-  .nav-right .cart-icon {
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/img_icon/購屋車.jpg);
-    background-size: contain;
-    background-position: center;
-    margin-right: 0px;
+  main .cardA .card .card-text-frame .card-link-frame {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  .nav-right .login-icon {
-    width: 32px;
-    height: 32px;
-    background-image: url(../img/img_icon/帳號.jpg);
-    background-size: contain;
-    background-position: center;
-    margin-right: 0zpx;
+  main .cardA .card .card-text-frame .card-link-frame a {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  main .cardA {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .cardA .card {
+    width: 49%;
+    max-width: unset;
+  }
+  main .cardA .card .card-text-frame .card-link-frame {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .cardA .card .card-text-frame .card-link-frame a {
+    margin-bottom: 10px;
+  }
+  main .bannerA {
+    padding-bottom: 56.83%;
+  }
+  main .bannerA #fake-bannerA {
+    padding-bottom: 56.83%;
+  }
+  main .bannerA #fake-bannerA .container-percent {
+    padding-bottom: 56.83%;
+  }
+  main .bannerB {
+    padding-bottom: 56.83%;
+  }
+  main .bannerB #fake-bannerA .container-percent {
+    padding-bottom: 56.83%;
+  }
+  main .cardB {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: unset;
+  }
+  main .cardB .card {
+    width: 49%;
+  }
+  footer .footer-frame {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .footer-frame .footer-style {
+    width: 33.33%;
+  }
+  nav .container .nav-frame .nav-right .drop-down-menu .footer-frame {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav .container .nav-frame .nav-right .drop-down-menu {
+    width: 100%;
+    height: unset;
   }
 }
 /*# sourceMappingURL=microsoft.css.map */

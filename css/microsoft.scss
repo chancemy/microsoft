@@ -193,6 +193,11 @@ nav{
 					background-size: contain;
 					background-position: center;
 					margin-right: 40px;
+
+					// @media (max-width:1366px){ 
+					// 	margin-right: 0px;
+					// }
+					
 				}
 				.cart-icon {
 					width: 16px;
@@ -791,45 +796,114 @@ footer{
 
 @media(max-width:1366px)
 {
-	.container{
+	nav .container{
 		max-width: calc(1366px + 10%);
 		padding: 0px 5%;
 		height: 100%;
 		margin: auto;
+		.nav-frame .nav-right{
+			.search{
+				display: none;
+			} 
+			.shopping-cart{
+				display: none;
+			} 
+			.account{
+				display: none;
+			} 
+			.search-icon {
+				margin-right: 15px;
+			} 
+			.cart-icon {
+				
+				margin-right: 15px;
+			} 
+			.login-icon {
+				
+				margin-right: 0px;
+			}
+		} 
+	} 
+	main .cardA .card .card-text-frame .card-link-frame {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		a{
+			margin-bottom: 10px;
+		}
 	}
-	.nav-right {
-		.search{
-			display: none;
+	
+}
+
+@media(max-width:1080px){
+	main .cardA {
+		flex-wrap: wrap;
+	}
+	main .cardA .card {
+		width: 49%;
+		max-width: unset;
+	}
+	main .cardA .card .card-text-frame .card-link-frame {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: unset;
+		justify-content: flex-start;
+		align-items: flex-start;
+		a{
+			margin-bottom: 10px;
 		}
-		.shopping-cart{
-			display: none;
-		}
-		.account{
-			display: none;
-		}
-		.search-icon {
-			width: 16px;
-			height: 16px;
-			background-image: url(../img/img_icon/搜尋.jpg);
-			background-size: contain;
-			background-position: center;
-			margin-right: 0px;
-		}
-		.cart-icon {
-			width: 16px;
-			height: 16px;
-			background-image: url(../img/img_icon/購屋車.jpg);
-			background-size: contain;
-			background-position: center;
-			margin-right: 0px;
-		}
-		.login-icon {
-			width: 32px;
-			height: 32px;
-			background-image: url(../img/img_icon/帳號.jpg);
-			background-size: contain;
-			background-position: center;
-			margin-right: 0zpx;
-		}
+	}
+	main .bannerA {
+		padding-bottom: 56.83%;
+		
+	}
+	main .bannerA #fake-bannerA {
+		
+		padding-bottom: 56.83%;
+		
+	}
+	main .bannerA #fake-bannerA .container-percent {
+		
+		padding-bottom: 56.83%;
+		
+	}
+	main .bannerB {
+		
+		padding-bottom: 56.83%;
+		
+	}
+	main .bannerB #fake-bannerA .container-percent {
+		
+		padding-bottom: 56.83%;
+		
+	}
+	main .cardB {
+		flex-wrap: wrap;
+		height: unset;
+	}
+	main .cardB .card {
+		width: 49%;
+		
+	}
+	footer .footer-frame {
+		width: 100%;
+		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	footer .footer-frame .footer-style {
+		width: 33.33%;
+	}
+	nav .container .nav-frame .nav-right .drop-down-menu .footer-frame {
+		flex-wrap: wrap;
+	}
+	nav .container .nav-frame .nav-right .drop-down-menu {
+		width: 100%;
+		height: unset;
+		
 	}
 }
