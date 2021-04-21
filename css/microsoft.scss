@@ -855,6 +855,8 @@ footer{
 		margin: auto;
 	}
 	main .cardA {
+		width: 100% ;
+		padding: 0 5%;
 		flex-wrap: wrap;
 	}
 	main .cardA .card {
@@ -896,6 +898,8 @@ footer{
 		
 	}
 	main .cardB {
+		width: 100% ;
+		padding: 0 5%;
 		flex-wrap: wrap;
 		height: unset;
 	}
@@ -927,5 +931,21 @@ footer{
 		position: absolute;
 		top: 54px;
 		right: 0;
+	}
+	main .social-media-link {
+		width: 100%;
+		padding: 0 5%;
+	}
+	main .cardB-title{
+		padding: 0 5%;
+	}
+}
+
+@media(max-width:860px){
+	nav .container .nav-frame .nav-left .xbox{
+		display: none;
+	}
+	nav .container .nav-frame .nav-left .support{
+		display: none;
 	}
 }

@@ -1077,6 +1077,8 @@ footer .footer-base ul li a:hover {
     margin: auto;
   }
   main .cardA {
+    width: 100%;
+    padding: 0 5%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1119,6 +1121,8 @@ footer .footer-base ul li a:hover {
     padding-bottom: 56.83%;
   }
   main .cardB {
+    width: 100%;
+    padding: 0 5%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: unset;
@@ -1156,6 +1160,22 @@ footer .footer-base ul li a:hover {
     position: absolute;
     top: 54px;
     right: 0;
+  }
+  main .social-media-link {
+    width: 100%;
+    padding: 0 5%;
+  }
+  main .cardB-title {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 860px) {
+  nav .container .nav-frame .nav-left .xbox {
+    display: none;
+  }
+  nav .container .nav-frame .nav-left .support {
+    display: none;
   }
 }
 /*# sourceMappingURL=microsoft.css.map */
