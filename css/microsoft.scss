@@ -85,6 +85,21 @@ nav{
 					background-repeat: no-repeat;
 					padding: 16px 0px 16px 0px;
 				}
+				.down-arrow {
+					width: 16px;
+					height: 16px;
+					background-image: url(../img/img_icon/下箭頭.jpg);
+					background-size: contain;
+					background-position: center;
+					margin-top: 5px;
+					margin-right: 25px;
+					text-decoration: none;	
+					display: none;
+				}
+				.more{
+					display: none;
+					margin: 0px 0px 0px 9px;
+				}
 			}
 			.nav-right {
 				li a:hover{
@@ -376,6 +391,11 @@ main{
 					}
 					.text365{
 						text-align: center;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
 					}
 			}		
 			.choose365:hover{
@@ -858,10 +878,12 @@ footer{
 		width: 100% ;
 		padding: 0 5%;
 		flex-wrap: wrap;
+		margin-top: 0px;
 	}
 	main .cardA .card {
 		width: 49%;
 		max-width: unset;
+		margin-top: 48px;
 	}
 	main .cardA .card .card-text-frame .card-link-frame {
 		margin-top: 10px;
@@ -876,6 +898,10 @@ footer{
 	main .bannerA {
 		padding-bottom: 56.83%;
 		
+	}
+	main .bannerB #fake-bannerA{
+		padding-bottom: 56.83%;
+
 	}
 	main .bannerA #fake-bannerA {
 		
@@ -948,4 +974,235 @@ footer{
 	nav .container .nav-frame .nav-left .support{
 		display: none;
 	}
+	nav .container .nav-frame .nav-left .more{
+		display: block;
+	}
+	nav .container .nav-frame .nav-left .down-arrow{
+		display: block;
+	}
+}
+@media(max-width:785px){
+	nav .container .nav-frame .nav-right .all-microsoft-frame{
+		display:none;
+	}
+	nav .container .nav-frame .nav-left .style{
+		display: none;
+	}
+	nav .container .nav-frame .nav-left .burger-frame{
+		width: 48px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 9px 3px 10px;
+	}
+	nav .container .nav-frame .nav-left .burger-frame .line{
+		width: 20px;
+		height: 1px;
+		background-color: black;
+		position: relative;
+	}
+	nav .container .nav-frame .nav-left .burger-frame .line::before{
+		content: '';
+		width: 20px;
+		height: 1px;
+		background-color: black;
+		position: absolute;
+		left: 0;
+		top: -5px;
+	}
+	nav .container .nav-frame .nav-left .burger-frame .line::after{
+		content: '';
+		width: 20px;
+		height: 1px;
+		background-color: black;
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+	}
+	
+	nav .container .nav-frame .nav-left .down-arrow{
+		display: none;
+	}
+	nav .container .nav-frame{
+		position: relative;
+	}
+	nav .container .nav-frame .nav-left .logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	nav .container .nav-frame .nav-right {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav .container .nav-frame .nav-right .cart-icon {
+		margin-right: 15px;
+		margin-left: auto;
+	}
+	nav .container {
+		max-width: 768px;
+		padding: 0px;
+		height: 100%;
+		margin: unset;
+	}
+	footer .footer-base{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	footer .footer-base ul{
+		justify-content: flex-start;
+		padding: 0px;
+		flex-wrap: wrap;
+	}
+	footer .footer-base ul li {
+		margin: 6px 4px 0px 6px;
+	}
+}
+@media(max-width:500px){
+	
+	picture{
+		background-color: rgb(230, 230, 230);
+
+	}
+	main .bannerA #fake-bannerA .container-percent {
+		width: 100%;
+		height: 320px;
+		padding: 0px 5%;
+		padding-bottom: 0;
+		margin: auto;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		background-color: rgb(230, 230, 230);
+
+	}
+	main .bannerA #fake-bannerA .container-percent .text-group {
+		height: 140px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	main .bannerA #fake-bannerA .container-percent .text-group .text-title{
+		margin: 2px 0px 4px;
+	}
+	main .bannerA #fake-bannerA .container-percent .text-group .shopping-frame{
+		margin: 14px 2px 0px;
+	}
+
+	main .shopping-link-frame {
+		height: 146px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 365px;
+		padding: 0 33px;
+	}
+	main .shopping-link-frame .choose365 {
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 15px;
+	}
+	main .shopping-link-frame .choose-surface {
+		
+		display: flex;
+		
+		flex-direction: row;
+		
+		justify-content: flex-start;
+		
+	}
+	main .shopping-link-frame .choose-windows10{
+		flex-direction: row;
+		
+		justify-content: flex-start;
+	}
+	main .shopping-link-frame .choose365 .img-500{
+		width: 20px;
+		height: 20px;
+		background-position: center;
+		background-size: contain;
+		margin-bottom: 0px;
+		margin-right: 8px;
+	}
+	main .shopping-link-frame .choose-surface .img-500{
+		width: 20px;
+		height: 20px;
+		background-position: center;
+		background-size: contain;
+		margin-bottom: 0px;
+		margin-right: 8px;
+
+	}
+	main .shopping-link-frame .choose-windows10 .img-500{
+		width: 20px;
+		height: 20px;
+		background-position: center;
+		background-size: contain;
+		margin-bottom: 0px;
+		margin-right: 8px;
+	}
+	main .shopping-link-frame .choose365 .text365{
+		flex-direction: row;
+
+	}
+	main .cardA .card .card-text-frame .card-link-frame{
+		flex-direction: column;
+	}
+	main .cardB-title{
+		margin-top: 368px;
+	}
+	main .bannerB #fake-bannerA .container-percent {
+		width: 100%;
+		height: 320px;
+		padding: 0px 5%;
+		padding-bottom: 0;
+		margin: auto;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		background-color: rgb(230, 230, 230);
+
+	}
+	main .bannerB #fake-bannerA .container-percent .text-group {
+		height: 140px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	main .bannerB #fake-bannerA .container-percent .text-group .text-title{
+		margin: 2px 0px 4px;
+		font-size: 20px;
+	}
+	main .bannerB #fake-bannerA .container-percent .text-group .shopping-frame{
+		margin: 14px 2px 0px;
+	}
+	main .cardA .card{
+		width: 100%;
+	}
+	main .cardB .card{
+		width: 100%;
+	}
+	footer .footer-frame .footer-style {
+		width: 100%;
+	}
+	
 }
