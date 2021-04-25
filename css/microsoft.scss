@@ -76,6 +76,15 @@ nav{
 				.style {
 					margin: 0 9px;
 				}
+				.burger-menu{
+					display: none;
+					// display: block;
+				}
+				.burger-frame{
+					.close{
+						display: none;
+					}
+				}
 				.logo {
 					width: 137px;
 					height: 100%;
@@ -988,13 +997,54 @@ footer{
 	nav .container .nav-frame .nav-left .style{
 		display: none;
 	}
-	nav .container .nav-frame .nav-left .burger-frame{
-		width: 48px;
-		height: 48px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 9px 3px 10px;
+	nav .container .nav-frame{
+		position: relative;
+		.nav-left {
+			#check-burger:checked ~ .burger-menu{
+				display: block;
+				width: 100%;
+				position: absolute;
+				top: 54px;
+				left: 0px;
+				z-index: 1;
+				ul{
+					padding: 0px;
+					margin: 0px;
+					background-color: #f2f2f2;
+					li{
+						display: flex;
+						justify-content: space-between;
+						align-content: center;
+						height: 49px;
+						padding: 14px 24px 15px 15px;
+						font-size: 15px;
+						border-bottom: 1px #e6e6e6 solid;
+					}
+				}
+			}
+			#check-burger:checked ~ .burger-frame{
+				.line{
+					display: none;
+				}
+				.close{
+					display: block;
+					font-size: 15px;
+				}
+			}
+			
+			.burger-frame{
+				width: 48px;
+				height: 48px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 9px 3px 10px;
+			}
+			
+			
+	} 
+		
+		
 	}
 	nav .container .nav-frame .nav-left .burger-frame .line{
 		width: 20px;
@@ -1064,8 +1114,7 @@ footer{
 	}
 }
 @media(max-width:500px){
-	
-	picture{
+	main .bannerA picture{
 		background-color: rgb(230, 230, 230);
 
 	}
@@ -1080,6 +1129,9 @@ footer{
 		left: 0px;
 		background-color: rgb(230, 230, 230);
 
+	}
+	main .bannerA #fake-bannerA .container-percent:hover~.right-img{
+		display: none;
 	}
 	main .bannerA #fake-bannerA .container-percent .text-group {
 		height: 140px;

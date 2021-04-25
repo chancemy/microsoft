@@ -96,6 +96,14 @@ nav .container .nav-frame .nav-left .style {
   margin: 0 9px;
 }
 
+nav .container .nav-frame .nav-left .burger-menu {
+  display: none;
+}
+
+nav .container .nav-frame .nav-left .burger-frame .close {
+  display: none;
+}
+
 nav .container .nav-frame .nav-left .logo {
   width: 137px;
   height: 100%;
@@ -1227,6 +1235,43 @@ footer .footer-base ul li a:hover {
   nav .container .nav-frame .nav-left .style {
     display: none;
   }
+  nav .container .nav-frame {
+    position: relative;
+  }
+  nav .container .nav-frame .nav-left #check-burger:checked ~ .burger-menu {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    z-index: 1;
+  }
+  nav .container .nav-frame .nav-left #check-burger:checked ~ .burger-menu ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f2f2f2;
+  }
+  nav .container .nav-frame .nav-left #check-burger:checked ~ .burger-menu ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 49px;
+    padding: 14px 24px 15px 15px;
+    font-size: 15px;
+    border-bottom: 1px #e6e6e6 solid;
+  }
+  nav .container .nav-frame .nav-left #check-burger:checked ~ .burger-frame .line {
+    display: none;
+  }
+  nav .container .nav-frame .nav-left #check-burger:checked ~ .burger-frame .close {
+    display: block;
+    font-size: 15px;
+  }
   nav .container .nav-frame .nav-left .burger-frame {
     width: 48px;
     height: 48px;
@@ -1324,7 +1369,7 @@ footer .footer-base ul li a:hover {
 }
 
 @media (max-width: 500px) {
-  picture {
+  main .bannerA picture {
     background-color: #e6e6e6;
   }
   main .bannerA #fake-bannerA .container-percent {
@@ -1337,6 +1382,9 @@ footer .footer-base ul li a:hover {
     top: 100%;
     left: 0px;
     background-color: #e6e6e6;
+  }
+  main .bannerA #fake-bannerA .container-percent:hover ~ .right-img {
+    display: none;
   }
   main .bannerA #fake-bannerA .container-percent .text-group {
     height: 140px;
